@@ -1,0 +1,74 @@
+.contact {
+  background: var(--color-bg);
+}
+
+.content {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+.infoItem {
+  padding: 32px;
+  border: 1px solid var(--color-border);
+}
+
+.label {
+  font-family: var(--font-serif);
+  font-size: 0.8rem;
+  color: var(--color-accent);
+  letter-spacing: 0.15em;
+  margin-bottom: 12px;
+}
+
+.value {
+  font-size: 0.9rem;
+  color: var(--color-text);
+}
+
+.socialTitle {
+  font-family: var(--font-serif);
+  font-size: 0.9rem;
+  color: var(--color-accent);
+  letter-spacing: 0.15em;
+  margin-bottom: 20px;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.socialLink {
+  font-size: 0.9rem;
+  color: var(--color-text-muted) !important;
+  letter-spacing: 0.05em;
+  padding: 8px 16px;
+  border: 1px solid var(--color-border);
+  transition: border-color 0.3s, color 0.3s;
+}
+
+.socialLink:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent) !important;
+}
+
+@media (max-width: 768px) {
+  .info {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .socialLinks {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

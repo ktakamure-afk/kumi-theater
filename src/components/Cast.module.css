@@ -1,0 +1,73 @@
+.cast {
+  background: var(--color-bg-section);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.card {
+  text-align: center;
+}
+
+.photo {
+  margin-bottom: 20px;
+}
+
+.photoPlaceholder {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: var(--color-bg-card);
+  border: 2px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  color: var(--color-accent);
+}
+
+.role {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  color: var(--color-accent);
+  margin-bottom: 4px;
+  letter-spacing: 0.1em;
+}
+
+.name {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-white);
+  margin-bottom: 8px;
+}
+
+.description {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .photoPlaceholder {
+    width: 110px;
+    height: 110px;
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}

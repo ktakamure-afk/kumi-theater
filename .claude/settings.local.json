@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest . --typescript --app --src-dir --no-tailwind --eslint --no-import-alias --use-npm --no-turbopack)",
+      "Bash(npm init -y)",
+      "Bash(npm pkg set name=kumi-theater)",
+      "Bash(npm install next@latest react@latest react-dom@latest)",
+      "Bash(npm install -D typescript @types/react @types/node @types/react-dom)",
+      "Bash(npx next build)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(gh auth status)",
+      "Bash(brew install gh)",
+      "Bash(gh auth login --web --git-protocol https)",
+      "Bash(git init)",
+      "Bash(git add -A)",
+      "Bash(git commit -m \"初回コミット: 演劇公演告知ホームページ\")"
+    ]
+  }
+}

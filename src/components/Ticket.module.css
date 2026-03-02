@@ -1,0 +1,110 @@
+.ticket {
+  background: var(--color-bg-section);
+}
+
+.content {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.priceList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 16px;
+}
+
+.priceItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.type {
+  font-size: 1rem;
+  color: var(--color-white);
+  min-width: 100px;
+  text-align: left;
+}
+
+.line {
+  flex: 1;
+  border-bottom: 1px dotted var(--color-border);
+}
+
+.price {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.note {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  min-width: 110px;
+  text-align: left;
+}
+
+.tax {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-bottom: 40px;
+  text-align: right;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.ctaPrimary {
+  display: inline-block;
+  padding: 16px 48px;
+  background: var(--color-accent);
+  color: var(--color-bg) !important;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  transition: background 0.3s;
+  width: 100%;
+  max-width: 360px;
+  text-align: center;
+}
+
+.ctaPrimary:hover {
+  background: var(--color-accent-light);
+}
+
+.ctaSecondary {
+  font-size: 0.9rem;
+  color: var(--color-text-muted) !important;
+  letter-spacing: 0.05em;
+}
+
+.notes {
+  text-align: left;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  line-height: 2;
+}
+
+@media (max-width: 768px) {
+  .priceItem {
+    gap: 8px;
+  }
+
+  .type {
+    min-width: 80px;
+    font-size: 0.9rem;
+  }
+
+  .note {
+    min-width: auto;
+    font-size: 0.7rem;
+  }
+}
